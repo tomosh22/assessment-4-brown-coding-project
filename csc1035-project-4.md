@@ -35,8 +35,9 @@ you have your own copy and then clone it into your local environment so
 that you can edit it.
 
 The file `README.md` gives a general description how the program is
-supposed to behave. The main package of the programme is `uk.ac.ncl` with the `Main.java` as the main file.
-Additional packages `entity`, `game`, `ui` contain actual implementation of the program.
+supposed to behave. The main package of the programme is `uk.ac.ncl`
+with the `Main.java` as the main file.
+
 
 The code base provided to you contains some errors.  Your job is to
 identify and fix these issues.  Note that that errors might be in the
@@ -46,7 +47,7 @@ same time, we do not expect you to find any bugs in `ui` package**.
 Fixes should be committed individually with descriptive
 commit messages.
 
-**Hint: We are aware of at least 15 errors.**
+**Hint:** We are aware of at least 15 errors.
 
 ## Marking Criteria
 
@@ -68,5 +69,3 @@ You should submit to NESS a zip file containing the following:
 - Your Java project source code (i.e. all of your .java files)
 - Your Word/PDF documentation with the NUCode URL of your last commit
   ("HEAD") to NESS (please ensure that the URL includes a Git hash)
-- Any test data needed to run your project. **HINT**: ensure to use relative
-  file paths in your code, not absolute ones
