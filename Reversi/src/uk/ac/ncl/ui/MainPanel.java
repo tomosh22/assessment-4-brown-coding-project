@@ -129,6 +129,10 @@ public class MainPanel extends JFrame {
                 ActionListener taskPerformer = ae -> MoveOpponent(opponent);
                 setUpTimer(taskPerformer);
             }
+            else{
+                missedMoves = 2;
+                CheckNextMove(moveChecker);
+            }
         }
         else{
             CheckNextMove(moveChecker);
