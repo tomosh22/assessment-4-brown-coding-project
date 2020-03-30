@@ -87,7 +87,7 @@ public class MainPanel extends JFrame {
     /**
      * Checks whether the game has finished
      *
-     * @param moveChecker
+     * @param moveChecker - current instance of the game's logic class
      */
     private void CheckNextMove(MoveChecker moveChecker){
         if (missedMoves > 1) {
@@ -101,7 +101,7 @@ public class MainPanel extends JFrame {
     /**
      * Makes a move for the opponent
      *
-     * @param opponent
+     * @param opponent - cell that the opponent has chosen for its move
      */
     private void MoveOpponent(Cell opponent){
         moveChecker.flipPieces(opponent, OPPONENTS_CELL_STATUS);
@@ -141,9 +141,9 @@ public class MainPanel extends JFrame {
 
     /**
      *
-     * Applies the move, if the clicked cell is corresponds to a potential move
+     * Applies the move, if the clicked cell corresponds to a potential move
      *
-     * @param tempEl
+     * @param tempEl - cell that has been clicked
      */
     private void onClick(Cell tempEl){
         if (tempEl.getValue() == CellStatus.GRAY) {
@@ -157,7 +157,7 @@ public class MainPanel extends JFrame {
     /**
      * Creates a delay to make user's and opponent's moves visible
      *
-     * @param taskPerformer
+     * @param taskPerformer - task to be executed after the delay
      */
     private void setUpTimer(ActionListener taskPerformer){
         Timer timer = new Timer(Constants.DELAY_TIME, taskPerformer);

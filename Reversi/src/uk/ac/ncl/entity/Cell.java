@@ -69,6 +69,7 @@ public class Cell {
 
     /**
      *   Updates the status of the cell
+     * @param value - new status of cell
      */
     public void setValue(CellStatus value) {
         this.value = value;
