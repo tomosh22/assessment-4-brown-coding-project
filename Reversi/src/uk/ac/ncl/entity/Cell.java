@@ -53,6 +53,8 @@ public class Cell {
 
     /**
      *   Changes button's design to have an effect of the "pressed" button
+     * @param colour - desired colour of the cells border
+     * @param isPressed - whether or not the left mouse button is down
      */
     public void colourTemp(Color colour, boolean isPressed){
         this.jButton.setBackground(colour);
