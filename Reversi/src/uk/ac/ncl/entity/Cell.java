@@ -39,6 +39,13 @@ public class Cell {
      */
     private Move move;
 
+    /**
+     * Each cell on the board
+     * @param value (colour) of the piece
+     * @param jButton UI element, click event listener will be added
+     * @param row row that the cell is placed in
+     * @param column column that the cell is placed in
+     */
     public Cell(CellStatus value, JButton jButton, int row, int column){
         this.value = value;
         this.jButton = jButton;
